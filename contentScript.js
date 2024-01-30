@@ -102,8 +102,13 @@
         }
     }
 
+    
     // If tab is reloaded on auth login, the navigation event wont recognize it
     if(window.location.pathname === "/auth/login") handleRoute("https://clientes.balanz.com/auth/login")
+    
+    // Same with this one, I'm too lazy to spend more time on this :)
+    if(window.location.pathname === "/app/mi-cartera") handleRoute("https://clientes.balanz.com/app/mi-cartera")
+
 
     // if navigation is handled by Balanz SPA it'll be handled by this event listener
     navigation.addEventListener('navigate', (e) => {
