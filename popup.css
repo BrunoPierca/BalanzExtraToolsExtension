@@ -1,0 +1,44 @@
+.container {
+  width: 280px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.hidden{
+  display: none;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.iconButton{
+  width: 15px;
+  height: 15px;
+}
+
+.textbox {
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  padding: 0px 2px;
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9;
+}

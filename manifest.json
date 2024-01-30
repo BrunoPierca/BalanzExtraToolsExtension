@@ -1,0 +1,24 @@
+{
+    "name": "Balanz extra tools",
+    "version": "0.1.0",
+    "description": "Autofill for balanz username input and calculations for daily variations",
+    "permissions": ["storage", "tabs", "activeTab"],
+    "host_permissions": ["https://clientes.balanz.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://clientes.balanz.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "32": "assets/logo.png"
+      },
+      "default_title": "Balanz Username",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "32": "assets/logo.png"
+    },
+    "manifest_version": 3
+}
