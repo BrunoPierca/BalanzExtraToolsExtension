@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const editUsername = (e) => {
         e.preventDefault()
-        console.log("Saving new username")
         chrome.storage.sync.set({ username: usernameInput.value })
         editIcon.classList.add("hidden")
         successIcon.classList.remove("hidden")

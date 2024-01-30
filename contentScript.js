@@ -6,7 +6,6 @@
 
     const handleRoute = async (destinationUrl) => {
         const { pathname } = new URL(destinationUrl)
-        console.log(pathname)
         switch (pathname) {
             case "/auth/login":
                 // Simulate event to prevent disabled submit button
